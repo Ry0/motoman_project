@@ -48,4 +48,7 @@
 
   <!-- Run the DB server -->
   <include file="$(find motoman_sia5_moveit_config)/launch/warehouse.launch"/>
+
+  <!-- Draw the trajectry -->
+  <node name="forward_kinematics_solver" pkg="motoman_viz" type="forward_kinematics_solver" />
 </launch>
